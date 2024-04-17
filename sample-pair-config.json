@@ -1,0 +1,28 @@
+{
+  "img_width": 128,
+  "img_height": 128,
+  "input_img_dir": "C:\\Users\\Karl\\Desktop\\pyunet\\test\\images",
+  "input_mask_dir": "C:\\Users\\Karl\\Desktop\\pyunet\\test\\masks",
+  "models": [
+    {
+      "type": "ucrazynet",
+      "file": "C:\\Users\\Karl\\Desktop\\pyunet\\ucrazynet.pth"
+    },
+    {
+      "type": "ucrazynet",
+      "file": "C:\\Users\\Karl\\Desktop\\pyunet\\ucrazynet-fl-0.1.pth"
+    },
+    {
+      "type": "ucrazynet",
+      "file": "C:\\Users\\Karl\\Desktop\\pyunet\\ucrazynet-ce-0.0001.pth"
+    },
+    {
+      "type": "ucrazynet",
+      "file": "C:\\Users\\Karl\\Desktop\\pyunet\\ucrazynet-ce-0.1.pth"
+    }],
+  "device": "cuda",
+  "gpu_index": 0,
+  "sampled_index": -1,
+  "in_channels": 3,
+  "out_channels": 2
+}

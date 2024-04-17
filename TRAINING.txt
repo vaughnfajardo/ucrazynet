@@ -1,0 +1,61 @@
+TRAINING
+
+
+python -m pyunet --mode train --config-file C:\Users\Karl\Desktop\pyunet\config.json --device cuda
+
+
+SAMPLE PAIR
+
+python -m pyunet --mode sample-pair --config-file 
+
+
+
+
+model_type_choices = [
+    "unet",
+    "unet_attn",
+    "unet_attn_dp",
+    "unet_attn_ghost",
+    "unet_attn_inverted_residual_block",
+    "unet_attn_stacked_ghost_irb",
+    "unet_depth",
+    "unet_attn_depth",
+    "unet_attn_dp_depth"
+]
+
+
+
+"unet"
+"C:\\Users\\Karl\\Desktop\\pyunet\\unet.pth"
+
+"unet_attn"
+"C:\\Users\\Karl\\Desktop\\pyunet\\unet_attn.pth"
+
+"unet_attn_dp"
+"C:\\Users\\Karl\\Desktop\\pyunet\\unet_attn_dp.pth"
+
+"unet_attn_inverted_residual_block"
+"C:\\Users\\Karl\\Desktop\\pyunet\\unet_attn_inverted_residual_block.pth"
+
+
+
+python -m pyunet --mode benchmark --config-file "C:\\Users\\Karl\\Desktop\\pyunet\\test-config.json"
+
+
+
+python -m pyunet --mode benchmark \
+  --img-width $IMG_WIDTH \
+  --img-height $IMG_HEIGHT \
+  --device $DEVICE \
+  --gpu-index $GPU_INDEX \
+  --input-img-dir $INPUT_IMG_DIR \
+  --input-mask-dir $INPUT_MASK_DIR \
+  --model-type $MODEL_TYPE \
+  --model-file $MODEL_FILE \
+  --in-channels $IN_CHANNELS \
+  --out-channels $OUT_CHANNELS
+
+
+  
+python -m pyunet --mode sample-pair --config-file "C:\\Users\\Karl\\Desktop\\pyunet\\sample-sample-pair-config.json"
+

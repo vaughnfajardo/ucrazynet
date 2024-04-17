@@ -1,0 +1,19 @@
+{
+    "img_width": 128,
+    "img_height": 128,
+    "input_img_dir": "C:\\Users\\Karl\\Desktop\\pyunet\\train\\images",
+    "input_mask_dir": "C:\\Users\\Karl\\Desktop\\pyunet\\train\\masks",
+    "device": "cuda",
+    "gpu_index": 0,
+    "sampled_index": -1,
+    "batch_size": 2,
+    "epochs": 100,
+    "learning_rate": 0.0001,
+    "loss_type": "CE",
+    "in_channels": 3,
+    "out_channels": 2,
+    "model_type": "ucrazynet",
+    "model_file": "C:\\Users\\Karl\\Desktop\\pyunet\\ucrazynet-ce-0.0001.pth"
+}
+
+
