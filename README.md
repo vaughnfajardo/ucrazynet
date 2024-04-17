@@ -1,16 +1,15 @@
 # UCrazyNet
 
-Encoder
-Ghost Convolution
-Depthwise Separable Convolution
+#### Encoder
+* Ghost Convolution (3 layers)
+* Depthwise Separable Convolution (2 layers)
+* Max Pooling 
+* Atrous Convolution (for attention mechanism, serving as skip connections)
 
-Max Pooling
-Atrous Convolution
-
-Decoder
-UpConv
-Attention Black (UpConv, Atrous Convolution)
-Depthwise Separable Convolution
+#### Decoder
+* UpConv
+* Attention Black (UpConv, Atrous Convolution)
+* Depthwise Separable Convolution
 
 ## Visualizations for UCrazyNet vs UNet-based models
 
